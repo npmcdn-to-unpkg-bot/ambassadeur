@@ -1,0 +1,41 @@
+<div id="custom-modal">
+	<div id="overlay">
+
+		<h1 class="shop">Recommandez Artips</h1>
+
+		<h4>Partagez Artips sur les mails de vos amis</h4>
+		<form id="ajaxform" class="registerForm form block_content_form" ng-submit="">
+			<md-input-container class="md-block">
+				<label>Email 1</label>
+				<input type="mail" required name="email1" ng-model="">
+			</md-input-container>
+
+			<md-input-container class="md-block">
+				<label>Email 2</label>
+				<input type="mail" name="email2" ng-model="">
+			</md-input-container>
+
+ 			<md-button type="submit" class="md-raised pull-right">Envoyer !</md-button>
+		</form>
+
+</br></br></br>
+		<hr>
+
+		<h4>Partagez Artips sur les réseaux sociaux</h4>
+		<md-button class="md-raised facebook" href="http://www.facebook.com/share.php?u=http://artips.fr/?f=referral">
+			PARTAGEZ ARTIPS SUR FACEBOOK
+		</md-button>
+		</br>
+		<md-button class="md-raised twitter" href="https://twitter.com/intent/tweet?text=Découvrez+Artips,+une+dose+d'art+au+quotidien+!&url=http://artips.fr/?f=referral">
+			PARTAGEZ ARTIPS SUR TWITTER
+		</md-button>
+
+
+    	
+		</br>
+
+		<a href ng-click="close()" class="pull-right"> X Close the recos</a>
+		
+	</div>
+	<div id="fade"></div>
+</div>

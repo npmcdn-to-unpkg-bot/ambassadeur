@@ -48,14 +48,11 @@
                 });
             });
 
-
-
-        //OPEN MODAL 
-        $scope.showModal = function(){
-            $rootScope.tipsous = $scope.user.tipsous;
+        //OPEN MODAL
+        $scope.showModal = function(template, contr){
             ModalService.showModal({
-                templateUrl: 'app/main/modalShop/modalShop.html',
-                controller: 'ModalShopController'
+                templateUrl: template,
+                controller: contr
               }).then(function(modal) {
                   modal.close.then(function() {
                     //$scope.customResult = 'All good!';
@@ -63,15 +60,30 @@
             });
         };
 
-        //BACKGROUND IF FUNCTION OF FAMILY
-
-
-        //EVOLUTION PICTURE IS FUNCTION OF RECOS
-
-
+        //OPEN MODAL SHOP
+        $scope.showShopModal = function(){
+            $rootScope.tipsous = $scope.user.tipsous;
+            $scope.showModal('app/main/modalShop/modalShop.html','ModalShopController');
+        };
+        
+        //OPEN MODAL SHOP
+        $scope.showRecosModal = function(){
+            $scope.showModal('app/main/modalRecos/modalRecos.html','ModalRecosController');
+        };
+  
     }
 
 
 
 
 })();
+
+
+
+
+
+
+
+
+
+

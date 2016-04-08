@@ -30,10 +30,10 @@
  		<div class="evolution" ng-style="{'background':'url(images/evolution/'+ imageUrl() +') no-repeat', 'background-size':'contain', 'background-position': 'center center', 'height':'300px', 'border-radius':'15px'}">
 		</div> 
 		<div class="box">
-			<button class="button button--pipaluk button--inverted  button--round-m button--text-thick largeButton">Recommandez Artips, récoltez des tipsous et </br> augmentez votre expérience ambassadeur</button>
+			<button class="button button--pipaluk button--inverted  button--round-m button--text-thick largeButton"ng-click="showRecosModal()">Recommandez Artips, récoltez des tipsous et </br> augmentez votre expérience ambassadeur</button>
 		</div>
 		<div class="box">
-			<button class="button button--pipaluk button--inverted button--round-m button--text-thick button--text-upper" ng-click="showModal()">
+			<button class="button button--pipaluk button--inverted button--round-m button--text-thick button--text-upper" ng-click="showShopModal()">
 				<i class="button__icon icon icon-shopping-cart"></i>
 				Boutique 
 				<div class="tipsous" >({{user.tipsous}} tipsous à dépenser) </div>

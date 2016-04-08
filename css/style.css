@@ -54,8 +54,14 @@ button.largeButton{
 
 
 .button--pipaluk.button--inverted::before.largeButton{
-    border-color: #E8E1D9;
+    border-color: white ;
+    border : 4px;
 }
+
+.button--pipaluk.button--inverted {
+	background-color: rgba(255,255,255, 0.6);
+}
+
 
 h3.recos{
 	text-align:center;
@@ -164,6 +170,20 @@ h2.shop{
 
 }
 
+.shopMod{
+
+}
+
+/*--------------------------------------------RECOS MODAL-------------------------------------------*/
+
+
+.facebook{
+	background-color: #4099FF;
+}
+
+.twitter{
+	background-color: #3b5998;
+}
 
 
 
