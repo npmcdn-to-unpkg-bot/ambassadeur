@@ -1,0 +1,57 @@
+
+<div class='signin' ng-controller="SignInController">
+
+		
+	<md-content class="contentform" >
+		<img class="logo" src="images/logo_artips_noBL.png"/>
+		<h1>Création du compte ambassadeur</h1>
+		<p>Email : {{mail}}</p>
+		<p>Famille artistique : {{family}}</p>
+
+	    <form name="signinForm" ng-submit="saveAccount()">
+
+		
+			<md-radio-group ng-model="signin.sex" layout='row'>
+				<md-radio-button value="F" class="md-primary"> Mme</md-radio-button>
+				<md-radio-button value="M"> M</md-radio-button>
+			</md-radio-group>
+
+			<md-input-container class="md-block">
+				<label>Prénom</label>
+				<input required name="firstName" ng-model="signin.firstName">
+				<div ng-messages="signinForm.firstName.$error">
+					<div ng-message="required">Champ requis.</div>
+				</div>
+			</md-input-container>
+
+			<md-input-container class="md-block">
+				<label>Nom</label>
+				<input required name="lastName" ng-model="signin.lastName">
+				<div ng-messages="signinForm.lastName.$error">
+					<div ng-message="required">Champ requis.</div>
+				</div>
+			</md-input-container>
+
+
+
+			<md-input-container class="md-block">
+				<label>Code Postal ou Pays si vous résidez à l'étranger.</label>
+				<input required name="livingPlace" ng-model="signin.livingPlace">
+				<div ng-messages="signinForm.livingPlace.$error">
+					<div ng-message="required">Champ requis.</div>
+				</div>
+			</md-input-container>
+			<div class="">
+ 			<md-button type="submit" class="md-raised">C'est parti !</md-button>
+ 			</div>
+
+
+		<p class='pull-right info'>Les renseignements que vous nous communiquez ne seront ni vendus, ni loués, ni diffusés à des tiers.</p></br>
+		</form>
+
+
+	</md-content>
+
+
+
+</div>

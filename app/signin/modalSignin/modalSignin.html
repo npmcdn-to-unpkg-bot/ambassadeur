@@ -1,0 +1,42 @@
+<div id="custom-modal">
+	<div id="overlay">
+
+		
+		<img class="mentor" ng-src="{{srcMentor}}" align="left"/>
+
+		<div ng-hide="previousNext(0)">
+			<h1 class="welcome">"Bienvenue {{firstNameWelcome}}</h1>
+			Vous faites maintenant partie de la grande famille des {{familyWelcome}}. </br></br> En tant que mentor, je vais vous accompagner tout au long de votre parcours chez Artips pour que vous découvriez toujours plus d’anecdotes croustillantes.
+		</div>
+
+
+
+		<div ng-hide="previousNext(1)">
+			Avez-vous autour de vous des personnes intéressées par l’art ? Dans votre famille, vos amis, vos collègues ? Proposez  à vos connaissances de s’inscrire à la newsletter Artips. Pour chaque nouvel abonné que vous avez recommandé, gagnez des étoiles de savoirs, augmentez de grade artistique et gagnez des cadeaux tout au long de votre traversée:
+
+		</div>
+
+
+		<div ng-hide="previousNext(2)">
+			Vous l’aurez compris, plus votre vie artistique avance plus vous acquérez des connaissances et du savoir. En fin de parcours, accédez au club très prisé du Conseil des Sages, devenez un ambassadeur Artips et recevez des offres privilégiés. Vous retrouverez toute l’évolution de vos étoiles de savoir dans votre espace abonné. Maintenant à vous de jouer. “ 
+			<h1 class='welcome pull-right'>{{mentor}}</h1>
+			
+		</div>
+		</br></br></br></br>
+		<md-button class="md-raised pull-right" ng-hide="hideNext()" ng-click="next()">Next</md-button>
+		<md-button class="md-raised md-primary pull-right" ng-hide="!(hideNext())" ng-click="close()" href="#/main" >COMMENCER LE PROGRAMME</md-button>
+		<md-button class="md-raised pull-right" ng-hide="hidePrevious()" ng-click="previous()">Previous</md-button>
+
+
+    	
+
+
+
+	    </br>
+		
+	</div>
+	<div id="fade"></div>
+</div>
+
+
+
