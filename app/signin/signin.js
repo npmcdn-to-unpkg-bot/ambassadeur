@@ -12,7 +12,7 @@
     	//PUT URL PARAMETER INTO SCOPE
         $scope.mail = $routeParams.mail;
         $scope.family = $routeParams.family;
-        $scope.iduser = $routeParams.iduser;
+        $scope.iduser = $routeParams.newiduser;
 
         $scope.signin = [];
         $scope.signin.sex = 'F';
@@ -24,15 +24,15 @@
             $scope.showModal();
 
             //var mailWithoutDut = $scope.emailToKey($scope.newMail);
-            var ref = new Firebase('https://ambassadeurs-artips.firebaseio.com/' + $scope.iduser);
+            var ref = new Firebase($scope.firebaseUrl + $scope.iduser);
                 ref.child('recos').set(0);
+                ref.child('tipsous').set(0);
                 ref.child('mail').set($scope.mail);
                 ref.child('firstName').set($scope.signin.firstName);
                 ref.child('lastName').set($scope.signin.lastName);
                 ref.child('family').set($scope.family);
                 ref.child('sex').set($scope.signin.sex);
                 ref.child('livingPlace').set($scope.signin.livingPlace);
-            //ref.set(true);
             ref = null;
             
         };
@@ -42,6 +42,7 @@
         $scope.showModal = function(){
             $rootScope.familyWelcome = $scope.family;
             $rootScope.firstNameWelcome = $scope.signin.firstName;
+            $rootScope.iduser = $scope.iduser;
             ModalService.showModal({
                 templateUrl: 'app/signin/modalSignin/modalSignin.html',
                 controller: 'ModalSignInController'

@@ -13,11 +13,11 @@
         $routeProvider
 
             // route for the home page
-            .when('/main', {
+            .when('/main/:iduser', {
                 templateUrl : 'app/main/main.html',
                 controller  : 'mainController'
             })
-            .when('/signin/:mail/:iduser/:family', {
+            .when('/signin/:mail/:newiduser/:family', {
                 templateUrl: 'app/signin/signin.html',
                 controller: 'SignInController'
             })
@@ -37,6 +37,8 @@
         $scope.gohome = function (){
 
         };
+        
+        $scope.firebaseUrl = 'https://ambassadeurs-artips.firebaseio.com/';
 
 
 

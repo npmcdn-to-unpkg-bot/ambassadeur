@@ -1,29 +1,58 @@
-<div ng-controller='mainController' class='rennaissance'>
+<div ng-controller='mainController' class='mainPage' ng-style="{'background':'url(images/familles/'+ backgroundUrl +') no-repeat top left fixed', 'background-size':'cover', 'height':'inherit'}">
 
 
 
 	<section class="content">
-		<h1>AMBASSADEURS ARTIPS</h1>
- 		<div class="evolution">
+		<md-grid-list
+			md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="6"
+			md-row-height-gt-md="1:1" md-row-height="2:2"
+			md-gutter="12px" md-gutter-gt-sm="8px" >
+
+			<md-grid-tile class="green" md-colspan="1" md-rowspan="2">
+				<h2 class="main">{{user.recos}} Parrainages</h2>
+			</md-grid-tile>
+
+			<md-grid-tile class="grey" md-colspan="4" md-rowspan="2">
+				<h1 class="main">AMBASSADEUR ARTIPS</h1>
+			</md-grid-tile>
+
+			<md-grid-tile class="yellow" md-colspan="1" md-rowspan="1">
+				<h2 class="main">{{user.tipsous}}</h2>
+			</md-grid-tile>
+
+			<md-grid-tile class="yellow" md-colspan="1" md-rowspan="1">
+				<img class="tipsousImg" src="images/tipsous.png"/>
+			</md-grid-tile>
+
+
+		</md-grid-list>
+		
+ 		<div class="evolution" ng-style="{'background':'url(images/evolution/'+ imageUrl() +') no-repeat', 'background-size':'contain', 'background-position': 'center center', 'height':'300px', 'border-radius':'15px'}">
 		</div> 
 		<div class="box">
-			<button class="button button--pipaluk button--inverted  button--round-s button--text-thick largeButton">Recommandez Artip, récoltez des tipsous et augmentez votre expérience ambassadeur</button>
+			<button class="button button--pipaluk button--inverted  button--round-m button--text-thick largeButton">Recommandez Artips, récoltez des tipsous et </br> augmentez votre expérience ambassadeur</button>
 		</div>
 		<div class="box">
-			<button class="button button--pipaluk button--inverted button--round-l button--text-thick button--text-upper" ng-click="showModal()">
+			<button class="button button--pipaluk button--inverted button--round-m button--text-thick button--text-upper" ng-click="showModal()">
 				<i class="button__icon icon icon-shopping-cart"></i>
-				Boutique
+				Boutique 
+				<div class="tipsous" >({{user.tipsous}} tipsous à dépenser) </div>
 			</button>
-			<button class="button button--pipaluk button--inverted button--round-l button--text-thick button--text-upper">	
+			<button class="button button--pipaluk button--inverted button--round-m button--text-thick button--text-upper">	
 				<i class="button__icon icon icon-film"></i>
 				Vidéos
 			</button>
-			<button class="button button--pipaluk button--inverted button--round-l button--text-thick button--text-upper">
+			<button class="button button--pipaluk button--inverted button--round-m button--text-thick button--text-upper">
 				<i class="icon-archive"></i>
 				Archives
 			</button>
 		</div>
 
+
 	</section>
+
+
+
+
 </div>
 

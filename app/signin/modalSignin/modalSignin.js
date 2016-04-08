@@ -10,8 +10,9 @@
     function ModalSignInController($scope, $rootScope, $routeParams, $location, close) {
  
         //$scope.close = close;
-        $scope.srcMentor = 'images/familles/' + $rootScope.familyWelcome + '/mentor.png';
+        $scope.srcMentor = 'images/familles/' + $rootScope.familyWelcome + '/mentor.jpg';
         $scope.mentor = 'Votre Mentor';
+
 
         $scope.previousNext = function (i){
             if (i===$scope.current){
@@ -58,8 +59,9 @@
 
         $scope.close = close;
 
-
+        $scope.hrefLink = '#/main/' + $rootScope.iduser;
     }
+
 
 })();
 

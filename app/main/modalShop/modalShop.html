@@ -1,10 +1,49 @@
 <div id="custom-modal">
 	<div id="overlay">
 
-	<h1>Boutique</h1>
-	Vous avez {{tipsou}} Tipsous.
+		<h1 class="shop">Boutique</h1>
+		<h2 class="shop">Vous avez {{tipsous}} <img class="tipsousText" src="images/tipsous.png" vertical-align="-30px"/></h2>
 
-	<a href ng-click="close()"> Close the shop</a>
+
+		<md-content class="md-padding" layout-xs="column" layout="row">
+			<div flex-xs flex-gt-xs="50" layout="row">
+
+				<md-card>
+					<md-card-title>
+						<md-card-title-text>
+							<span class="md-headline">Le livre Artips</span>
+						</md-card-title-text>
+					</md-card-title>
+					<md-card-content layout="row" layout-align="space-between">
+						<div class="md-media-xl card-media">
+							<img src="images/boutique/livre-artips.jpg" class="md-card-image cartImg">
+						</div>
+				        <md-card-actions layout="row" layout-align="end center">
+				         	<md-button class="md-raised">10 Tipsous</md-button>
+				        </md-card-actions>
+					</md-card-content>
+				</md-card>
+
+				<md-card>
+					<md-card-title>
+						<md-card-title-text>
+							<span class="md-headline">Le livret Artips</span>
+						</md-card-title-text>
+					</md-card-title>
+					<md-card-content layout="row" layout-align="space-between">
+						<div class="md-media-xl card-media">
+							<img src="images/boutique/livret-artips.png" class="md-card-image cartImg">
+						</div>
+				        <md-card-actions layout="row" layout-align="end center">
+				         	<md-button class="md-raised">5 Tipsous</md-button>
+				        </md-card-actions>
+					</md-card-content>
+				</md-card>
+
+		    </div>
+		</md-content>
+
+		<a href ng-click="close()" class="pull-right"> X Close the shop</a>
 		
 	</div>
 	<div id="fade"></div>

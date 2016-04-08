@@ -13,10 +13,10 @@
 
         $scope.close = close;
 
-        $scope.tipsou = 10;
+        //$scope.tipsou = 10;
 
 
-
+        
 
 
     }

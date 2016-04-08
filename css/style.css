@@ -1,0 +1,185 @@
+@font-face {font-family: 'Museo-500';src: url('webfonts/26F568_0_0.eot');src: url('webfonts/26F568_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/26F568_0_0.woff') format('woff'),url('webfonts/26F568_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-700';src: url('webfonts/26F56C_0_0.eot');src: url('webfonts/26F56C_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/26F56C_0_0.woff') format('woff'),url('webfonts/26F56C_0_0.ttf') format('truetype');}
+
+html{
+
+	height: 100%;
+}
+body{
+
+	height: 100%;
+}
+
+h1{
+	font-family: Museo-700;
+}
+
+h2{
+	font-family: Museo-500;
+}
+
+/*--------------------------------------------MAIN--------------------------------------------*/
+.body{
+	/*height: 100%;*/
+	color:white;
+	height: inherit;
+
+}
+
+
+
+h1.main{
+	color:white;
+	text-shadow: 2px 2px black;
+}
+
+h2.main{
+	color:white;
+	text-shadow: 2px 2px black;
+}
+
+.mainPage {
+
+}
+
+.evolution{
+
+}
+
+button.largeButton{
+	width:70%;
+	max-width: 70%;
+}
+
+
+
+.button--pipaluk.button--inverted::before.largeButton{
+    border-color: #E8E1D9;
+}
+
+h3.recos{
+	text-align:center;
+}
+
+.tipsous{
+	font-style: italic;
+	font-size: 80%;
+}
+
+.tipsousImg{
+	width:65%;
+	padding-top: 50px;
+
+}
+
+.test{
+	display: block;
+}
+/*--------------------------------------------SIGNIN--------------------------------------------*/
+.signin{
+	background: url("../images/bg-signin.png") no-repeat top right fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*height:900px;*/
+	height: inherit;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+.contentform{
+	width: 50%;
+	background-color: rgba(255,255,255,0.9);
+	margin-left : auto;
+	margin-right:auto;
+	text-align: center;
+	padding:40px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+
+p.info{
+	font-size:.8em; 
+	width: 100%; 
+	text-align: center;
+}
+
+.logo{
+	max-width: 100%;
+}
+
+.but{
+	font-family: Museo-500;
+}
+
+/*--------------------------------------------SIGNIN MODAL-------------------------------------------*/
+h1.welcome{
+	color :#a10f48;
+}
+
+img.mentor{
+	align:left;
+	width: 25%;
+    padding: 10px;
+}
+
+
+md-grid-list {
+  margin: 8px; }
+.grey {
+   }
+.green {
+   }
+.yellow {
+   }
+
+md-grid-tile {
+  transition: all 400ms ease-out 50ms; }
+
+
+/*--------------------------------------------SHOP MODAL-------------------------------------------*/
+
+.cartImg{
+	width:100%;
+}
+
+md-card{
+	width:100%;
+}
+
+h1.shop{
+	text-align: center;
+	color :#a10f48;
+}
+
+h2.shop{
+	text-align: center;
+}
+
+.tipsousText{
+	width:6%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
