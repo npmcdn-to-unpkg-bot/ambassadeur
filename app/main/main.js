@@ -7,7 +7,7 @@
     	.controller('mainController', mainController);
 
     // create the controller and inject Angular's $scope
-    function mainController($scope, $rootScope, $routeParams, ModalService, $timeout) {
+    function mainController($scope, $rootScope, $routeParams, ModalService, $timeout, $document) {
         // create a message to display in our view
         //$scope.message = 'Everyone come and see how good I look!';
 
@@ -63,11 +63,14 @@
         //OPEN MODAL SHOP
         $scope.showShopModal = function(){
             $rootScope.tipsous = $scope.user.tipsous;
+            var bodyRef = angular.element( $document[0].body );
+            bodyRef.addClass('ovh');
             $scope.showModal('app/main/modalShop/modalShop.html','ModalShopController');
         };
         
         //OPEN MODAL SHOP
         $scope.showRecosModal = function(){
+            $rootScope.userid = $scope.user.id;
             $scope.showModal('app/main/modalRecos/modalRecos.html','ModalRecosController');
         };
   

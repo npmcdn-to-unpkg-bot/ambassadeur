@@ -20,6 +20,8 @@
         $scope.signin.lastName = '';
         $scope.signin.livingPlace ='';
 
+        $scope.backgroundUrl = $scope.family + '/background.jpg';
+
         $scope.saveAccount = function(){
             $scope.showModal();
 

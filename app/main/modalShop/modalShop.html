@@ -1,49 +1,123 @@
 <div id="custom-modal">
-	<div id="overlay" class="shopMod">
+	<div id="overlay" class="shopMod" ng-scrollbar rebuild-on="rebuild:me">
 
 		<h1 class="shop">Boutique</h1>
 		<h2 class="shop">Vous avez {{tipsous}} <img class="tipsousText" src="images/tipsous.png" vertical-align="-30px"/></h2>
 
 
-		<md-content class="md-padding" layout-xs="column" layout="row">
-			<div flex-xs flex-gt-xs="50" layout="row">
 
-				<md-card>
-					<md-card-title>
-						<md-card-title-text>
-							<span class="md-headline">Le livre Artips</span>
-						</md-card-title-text>
-					</md-card-title>
-					<md-card-content layout="row" layout-align="space-between">
-						<div class="md-media-xl card-media">
-							<img src="images/boutique/livre-artips.jpg" class="md-card-image cartImg">
-						</div>
-				        <md-card-actions layout="row" layout-align="end center">
-				         	<md-button class="md-raised">10 Tipsous</md-button>
-				        </md-card-actions>
-					</md-card-content>
-				</md-card>
+ 		<div class="md-padding shopContent" layout="row" layout-xs="column">
+			<div flex-xs flex-gt-xs="50" layout="column">
 
-				<md-card>
-					<md-card-title>
-						<md-card-title-text>
-							<span class="md-headline">Le livret Artips</span>
-						</md-card-title-text>
-					</md-card-title>
-					<md-card-content layout="row" layout-align="space-between">
-						<div class="md-media-xl card-media">
-							<img src="images/boutique/livret-artips.png" class="md-card-image cartImg">
+
+				<div class="boxCard">
+					<div>
+						<div>
+							<span class="md-headline">Un livret Artips</span>
 						</div>
-				        <md-card-actions layout="row" layout-align="end center">
+					</div>
+					<div class="shopCardContent" layout="row" layout-align="space-between">
+						<div class="">
+							<img src="images/boutique/livret-artips.png" class="cartImg">
+						</div>
+				        <div layout="row" layout-align="center start">
 				         	<md-button class="md-raised">5 Tipsous</md-button>
-				        </md-card-actions>
-					</md-card-content>
-				</md-card>
+				        </div>
+					</div>
+				</div>
+
+				<div class="boxCard">
+					<div>
+						<div>
+							<span class="md-headline"> 6 mois d'application Artips</span>
+						</div>
+					</div>
+					<div class="shopCardContent" layout="row" layout-align="space-between">
+						<div class="">
+							<img src="images/boutique/applii.png" class="cartImg">
+						</div>
+				        <div layout="row" layout-align="center start">
+				         	<md-button class="md-raised">5 Tipsous</md-button>
+				        </div>
+					</div>
+				</div>
+
+				<div class="boxCard">
+					<div>
+						<div>
+							<span class="md-headline">Visite Guidée Artips</span>
+						</div>
+					</div>
+					<div class="shopCardContent" layout="row" layout-align="space-between">
+						<div class="">
+							<img src="images/logo_artips_noBL.png" class="cartImg">
+						</div>
+				        <div layout="row" layout-align="center start">
+				         	<md-button class="md-raised">20 Tipsous</md-button>
+				        </div>
+					</div>
+				</div>				
+
+
+				
 
 		    </div>
-		</md-content>
+			<div flex-xs flex-gt-xs="50" layout="column">
+			<div class="boxCard">
+				<div>
+					<div>
+						<span class="md-headline">Un abonnement de 6 mois aux livrets Artips</span>
+					</div>
+				</div>
+					<div class="shopCardContent" layout="row" layout-align="space-between">
+						<div class="">
+							<img src="images/boutique/livrets-artips.png" class="cartImg">
+						</div>
+				        <div layout="row" layout-align="center start">
+				         	<md-button class="md-raised">10 Tipsous</md-button>
+				        </div>
+					</div>
+				</div>
 
-		<a href ng-click="close()" class="pull-right"> X Close the shop</a>
+				<div class="boxCard">
+					<div>
+						<div>
+							<span class="md-headline">Le livre Artips</span>
+						</div>
+					</div>
+					<div class="shopCardContent" layout="row" layout-align="space-between">
+						<div class="">
+							<img src="images/boutique/livre-artips.png" class="cartImg">
+						</div>
+				        <div layout="row" layout-align="center start">
+				         	<md-button class="md-raised">10 Tipsous</md-button>
+				        </div>
+					</div>
+				</div>
+
+				<div class="boxCard">
+					<div>
+						<div>
+							<span class="md-headline">2 places pour une exposition</span>
+						</div>
+					</div>
+					<div class="shopCardContent" layout="row" layout-align="space-between">
+						<div class="">
+							<img src="images/logo_artips_noBL.png" class="cartImg">
+						</div>
+				        <div layout="row" layout-align="center start">
+				         	<md-button class="md-raised">20 Tipsous</md-button>
+				        </div>
+					</div>
+				</div>	
+
+		    </div>
+
+
+
+		</div>
+
+		<a href ng-click="close()" class="pull-right"> X Fermer</a>
 		
 	</div>
 	<div id="fade"></div>

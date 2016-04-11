@@ -22,11 +22,11 @@
 		<hr>
 
 		<h4>Partagez Artips sur les réseaux sociaux</h4>
-		<md-button class="md-raised facebook" href="http://www.facebook.com/share.php?u=http://artips.fr/?f=referral">
+		<md-button class="facebook" href={{hrefFacebook}}>
 			PARTAGEZ ARTIPS SUR FACEBOOK
 		</md-button>
 		</br>
-		<md-button class="md-raised twitter" href="https://twitter.com/intent/tweet?text=Découvrez+Artips,+une+dose+d'art+au+quotidien+!&url=http://artips.fr/?f=referral">
+		<md-button class="twitter" href={{hrefTwitter}}>
 			PARTAGEZ ARTIPS SUR TWITTER
 		</md-button>
 
@@ -34,7 +34,7 @@
     	
 		</br>
 
-		<a href ng-click="close()" class="pull-right"> X Close the recos</a>
+		<a href ng-click="close()" class="pull-right"> X Fermer</a>
 		
 	</div>
 	<div id="fade"></div>

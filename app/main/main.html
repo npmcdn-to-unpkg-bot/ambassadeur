@@ -1,54 +1,37 @@
-<div ng-controller='mainController' class='mainPage' ng-style="{'background':'url(images/familles/'+ backgroundUrl +') no-repeat top left fixed', 'background-size':'cover', 'height':'inherit'}">
+<div ng-controller='mainController' class='mainPage' ng-style="{'background':'url(images/familles/'+ backgroundUrl +') no-repeat top left fixed', 'background-size':'cover'}">
 
 
 
-	<section class="content">
-		<md-grid-list
-			md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="6"
-			md-row-height-gt-md="1:1" md-row-height="2:2"
-			md-gutter="12px" md-gutter-gt-sm="8px" >
+	<section class="content contentMain">
+		<img class="logoMain" src="images/logo_artips_noBL.png"/>
+		<h1 class="main">PROGRAMME AMBASSADEUR</h1>
+		<h2 class="main">{{user.firstName}} {{user.lastName}}</h2>
 
-			<md-grid-tile class="green" md-colspan="1" md-rowspan="2">
-				<h2 class="main">{{user.recos}} Parrainages</h2>
-			</md-grid-tile>
-
-			<md-grid-tile class="grey" md-colspan="4" md-rowspan="2">
-				<h1 class="main">AMBASSADEUR ARTIPS</h1>
-			</md-grid-tile>
-
-			<md-grid-tile class="yellow" md-colspan="1" md-rowspan="1">
-				<h2 class="main">{{user.tipsous}}</h2>
-			</md-grid-tile>
-
-			<md-grid-tile class="yellow" md-colspan="1" md-rowspan="1">
-				<img class="tipsousImg" src="images/tipsous.png"/>
-			</md-grid-tile>
-
-
-		</md-grid-list>
-		
- 		<div class="evolution" ng-style="{'background':'url(images/evolution/'+ imageUrl() +') no-repeat', 'background-size':'contain', 'background-position': 'center center', 'height':'300px', 'border-radius':'15px'}">
+		<div class="evolution" ng-style="{'background':'url(images/evolution/'+ imageUrl() +') no-repeat', 'background-size':'contain', 'background-position': 'center center', 'height':'300px', 'border-radius':'15px'}">
 		</div> 
-		<div class="box">
-			<button class="button button--pipaluk button--inverted  button--round-m button--text-thick largeButton"ng-click="showRecosModal()">Recommandez Artips, récoltez des tipsous et </br> augmentez votre expérience ambassadeur</button>
-		</div>
-		<div class="box">
-			<button class="button button--pipaluk button--inverted button--round-m button--text-thick button--text-upper" ng-click="showShopModal()">
-				<i class="button__icon icon icon-shopping-cart"></i>
-				Boutique 
-				<div class="tipsous" >({{user.tipsous}} tipsous à dépenser) </div>
-			</button>
-			<button class="button button--pipaluk button--inverted button--round-m button--text-thick button--text-upper">	
-				<i class="button__icon icon icon-film"></i>
-				Vidéos
-			</button>
-			<button class="button button--pipaluk button--inverted button--round-m button--text-thick button--text-upper">
-				<i class="icon-archive"></i>
-				Archives
-			</button>
-		</div>
+		<div class="legendEvolution">Faîtes évoluer votre personnage en parrainant vos amis.</div></br>
+		
+		<md-button class="pinkButton md-raised" ng-click="showRecosModal()">RECOMMANDER ARTIPS </md-button>
 
+		<md-content class="md-padding noBackGround" layout="row" layout-xs="column">
+			<div class="cardMain" flex>
+				<span class="md-headline">Vous avez parrainé {{user.recos}} personnes. </span>
+				<p>Profitez de plus en plus d'archives Artips et de vidéos Artips en parrainant vos amis.</p>
+				<md-button class="md-raised">VOIR LES ARCHIVES</md-button>
+	         	<md-button class="md-raised">VOIR LES VIDEOS</md-button>
+			</div>
+			<div class="cardMain" flex>
+				<span class="md-headline">Vous avez récolté {{user.tipsous}} Tipsous.</span>
+				<div class="md-media-xl card-media">
+					<img class="md-card-image tipsousImg" src="images/tipsous.png"/>
+				</div>
+				<p>Gagnez des Tipsous et allez les dépenser dans la boutique Artips. Chaque parrainage vous rapporte un Tipsou.</p>
+		        <md-button class="md-raised" ng-click="showShopModal()">VOIR LA BOUTIQUE</md-button>
+		        	
+			</div>
+		</md-content>
 
+	<p href class="pull-right reglementation">Modalités du programme ambassadeur</p>
 	</section>
 
 
