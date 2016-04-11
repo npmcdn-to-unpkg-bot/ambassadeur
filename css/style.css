@@ -27,7 +27,7 @@ h2{
 .content h1.main{
 	color:white;
 	text-shadow: 2px 2px black;
-	margin:15px 0px 5px 0px;
+	margin:0px 0px 0px 0px;
 }
 
 
@@ -93,7 +93,7 @@ h3.recos{
 }
 
 .logoMain{
-	width:60%;
+	width:45%;
 }
 
 .cardMain{
@@ -177,11 +177,15 @@ p.info{
 }
 
 .logo{
-	max-width: 100%;
+	max-width: 40%;
 }
 
 .but{
 	font-family: Museo-500;
+}
+
+#overlay.recos{
+	top:5%;
 }
 
 /*--------------------------------------------SIGNIN MODAL-------------------------------------------*/
@@ -203,13 +207,13 @@ img.mentor{
 /*--------------------------------------------SHOP MODAL-------------------------------------------*/
 
 .cartImg{
-	width:152px;
+	width:100px;
 
 }
 
-md-card{
+/*md-card{
 	width:90%;
-}
+}*/
 
 h1.shop{
 	text-align: center;
@@ -222,28 +226,52 @@ h2.shop{
 
 .tipsousText{
 	width:6%;
+	vertical-align: middle;
 
 }
 
-.shopMod{
-	height: 70%;
+.tipsousTextPetit{
+	width:25%;
+	vertical-align: middle;
+
 }
 
-.md-padding.shopContent{
+button.md-raised.sous.md-button.md-ink-ripple{
+	padding : 1px;
+	width: 40px;
+}
+
+
+/*.md-padding.shopContent{
+	height: inherit;
+    overflow-y: auto;
+}*/
+
+.shopContent{
 	height: inherit;
     overflow-y: auto;
 }
 
-md-card-content.shopCardContent{
+/*md-card-content.shopCardContent{
 	height: 600px;
-}
+}*/
 
 .boxCard{
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 	padding:15px;
 	margin:8px;
 	overflow: hidden;
-    height: 1000px;
+    /*height: 1000px;*/
+    
+}
+
+.titleCard{
+	font-size: 0.8em;
+}
+
+#overlay.shopMod{
+	top:5%;
+	/*height: 70%;*/
 }
 
 /*--------------------------------------------RECOS MODAL-------------------------------------------*/

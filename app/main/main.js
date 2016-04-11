@@ -63,8 +63,8 @@
         //OPEN MODAL SHOP
         $scope.showShopModal = function(){
             $rootScope.tipsous = $scope.user.tipsous;
-            var bodyRef = angular.element( $document[0].body );
-            bodyRef.addClass('ovh');
+            // var bodyRef = angular.element( $document[0].body );
+            // bodyRef.addClass('ovh');
             $scope.showModal('app/main/modalShop/modalShop.html','ModalShopController');
         };
         
